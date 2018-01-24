@@ -68,17 +68,7 @@ def read_screen_names(filename):
 
     Here's a doctest to confirm your implementation is correct.
     >>> read_screen_names('candidates.txt')
-    ['DrJillStein', 'GovGaryJohnson', 'HillaryClinton', 'realDonaldTrump']
-        listNames = [];
-    if filename != "":
-      file_object  = open(filename, "r+")
-      for i in file_object:
-           i = i.strip()
-           listNames.append(i)
-        
-    return listNames;
-    else:
-        print ("No file name provided")
+    
     """
     ###TODO
     screen_names = [];
@@ -355,7 +345,7 @@ def draw_network(graph, users, filename):
 def main():
     """ Main method. You should not modify this. """
     twitter = get_twitter()
-    screen_names = read_screen_names("C:\\Users\\Hiral\\Downloads\\assignments-master\\assignments-master\\a0\\candidates.txt")
+    screen_names = read_screen_names("candidates.txt")
     print('Established Twitter connection.')
     print('Read screen names: %s' % screen_names)
     users = sorted(get_users(twitter, screen_names), key=lambda x: x['screen_name'])
