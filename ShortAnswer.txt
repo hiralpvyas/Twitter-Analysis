@@ -56,7 +56,7 @@ number of Total request we have to make: 5958
 		So 4 candidates +  Total of their friends = number of requests.
 			4 + 1650+3489+770+45 = 5958 requests.
 
-	Approximate total time it will take: 5943 minutes = 99 Hours, 2 Minutes and 59 Seconds
+	Approximate total time it will take: 5940 minutes = 99 Hours
 	calculation:
 		(Assumption: time to get twitter response is negligible)
 		For every friends/ids request, only 15 request can be made in 15 minute time window.
